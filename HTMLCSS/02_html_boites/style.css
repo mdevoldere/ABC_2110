@@ -1,0 +1,29 @@
+body {
+    color: violet;
+    background-color: aqua;
+}
+
+
+header {
+    
+}
+
+h1 {
+    display: inline-block;
+    /*height: 200px;*/
+    width: 60%;
+    color: #FF0000;
+    background-color: yellow;
+    border: 2px solid blue;
+    border-radius: 20px;
+    font-size: 72px;
+    margin-top: 0;
+    padding: 25px 
+}
+
+h2 {
+    height: 300px;
+    width: 500px;
+    border:2px solid darkgreen;
+    border-radius: 50%;
+}

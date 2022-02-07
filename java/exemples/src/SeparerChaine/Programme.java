@@ -1,21 +1,53 @@
 package SeparerChaine;
 
+import java.util.Scanner;
+
 public class Programme {
 
 	public static void main(String[] args) {
 
-		//Scanner sc = new Scanner(System.in);
+		String saisie;
+		String[] tableauDeConversion;
+		int valeur;
+		String uniteDeMesure;
+		double conversion;
+		Scanner sc = new Scanner(System.in);
 		
-		String saisie = "12 mi";
+		System.out.println("Entrez une valeur suivie de MI ou KM:");
 		
-		saisie = saisie.trim();
-		// comment séparer "12" et "mi" ?
+		saisie = sc.nextLine(); // "12 mi"
 		
-		String[] tableau = saisie.split(" ");
+		tableauDeConversion = saisie.split(" ");
 		
-		int valeur = Integer.valueOf("1234");
+		valeur = Integer.valueOf(tableauDeConversion[0]);
 		
-		System.out.println("");
+		if(tableauDeConversion.length > 1) {
+			uniteDeMesure = tableauDeConversion[1];
+		}
+		else {
+			uniteDeMesure = "km";
+		}
+		
+		uniteDeMesure = uniteDeMesure.toLowerCase();
+		
+		if(uniteDeMesure.equals("km")) {
+			// conversion en km vers mi
+			conversion= (valeur/1.609);
+			System.out.println(" La distance "+valeur+" en km vaut "
+					+conversion+" Miles");
+		}
+		else {
+			// conversion mi vers km
+			conversion= (valeur*1.609);
+			System.out.println(" La distance "+valeur+" en miles vaut "
+					+conversion+" km");
+		}
+		
+		// affichage du résultat
+		
+		
+		
+		sc.close();
 
 	}
 

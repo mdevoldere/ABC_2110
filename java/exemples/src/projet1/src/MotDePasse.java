@@ -6,7 +6,6 @@ public class MotDePasse {
 
 		Scanner sc = new Scanner(System.in);
 		
-		
 		String pswd;
 		int tries =0;
 		boolean pswdok = false;

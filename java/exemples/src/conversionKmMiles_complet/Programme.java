@@ -1,4 +1,4 @@
-package ConversionKmMiles;
+package conversionKmMiles_complet;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package SeparerChaine;
+package conversionKmMiles_base;
 
 import java.util.Scanner;
 

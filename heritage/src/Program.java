@@ -2,17 +2,22 @@
 public class Program {
 
 	public static void main(String[] args) {
+				
+		Animal toto = new Animal("Canard");
 		
-		
-		Animal toto;
 		Animal tata;
+		tata = new Animal("Taupe");
 		
-		toto = new Animal();
+		System.out.println("Tata est un(e) " + tata.getEspece());
 		
-		tata = new Animal();
+		tata.manger();
 		
-		tata.setEspece("chat");
-
+		
+		Chat garfield = new Chat();
+		
+		garfield.manger();
+		
+		
 	}
 
 }
